@@ -4,8 +4,8 @@
       <a href="#" class="date">{{todayDate}}</a>
 
       <div ng-if="statements_list !== undefined">
-        <ul ng-repeat="statement in statements_list">
-          <h1>{{statement.name_of_minister}} to give a statement on</h1>
+        <ul class="cards-snippet" ng-repeat="statement in statements_list">
+          <h2>{{statement.name_of_minister}} to give a statement on</h2>
           <li>
             <p>{{statement.list_of_statements}}</p>
 
