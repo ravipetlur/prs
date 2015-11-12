@@ -1,0 +1,17 @@
+/* Empty. Add your own CSS if you like */
+.tabs .tab-item .icon.loksabha {
+  background-repeat: no-repeat;
+  background-position: 50%;
+  height: 100%;
+  background-image: url('/img/loksabha.png');
+  background-size: contain;
+}
+
+.tabs .tab-item .icon.rajyasabha {
+  background-repeat: no-repeat;
+  background-position: 50%;
+  height: 100%;
+  background-image: url('/img/rajyasabha.png');
+  background-size: contain;
+}
+

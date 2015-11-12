@@ -1,0 +1,14 @@
+<ion-view view-title="Short Discussion">
+  <ion-content class="padding">
+    <main class="main">
+      <a href="#" class="date">{{todayDate}}</a>
+      <ul>
+        <div ng-if="short_discussion_list !== undefined">
+          <li ng-repeat="discussion in short_discussion_list">
+            <a href={{discussion.name_of_discussion_topic}}>{{discussion.name_of_discussion_topic}}</a>
+          </li>
+        </div>
+      </ul>
+    </main>
+  </ion-content>
+</ion-view>

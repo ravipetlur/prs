@@ -1,0 +1,17 @@
+<ion-view view-title="Bill for introduction and passing">
+  <ion-content class="padding">
+    <main class="main">
+      <a href="#" class="date">{{todayDate}}</a>
+      <ul>
+        <div ng-if="todayBillList !== undefined">
+          <li ng-repeat="bill in todayBillList">
+            <p>{{bill.name_of_bill}}</p>
+            <a class="ion-document-text button" href={{bill.link_of_bill_summary}}> Bill Summary</a>
+            <a class="button" href={{bill.link_to_legislative_brief}}>Legislative Brief</a>
+            <a class="button" href={{bill.link_to_standing_committee_report_summary}}>Standing Committee Report</a>
+          </li>
+        </div>
+      </ul>
+    </main>
+  </ion-content>
+</ion-view>

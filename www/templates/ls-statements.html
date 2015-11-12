@@ -1,0 +1,18 @@
+<ion-view view-title="Statements by ministers">
+  <ion-content class="padding">
+    <main class="main">
+      <a href="#" class="date">{{todayDate}}</a>
+
+      <div ng-if="statements_list !== undefined">
+        <ul ng-repeat="statement in statements_list">
+          <h1>{{statement.name_of_minister}} to give a statement on</h1>
+          <li>
+            <p>{{statement.list_of_statements}}</p>
+
+            <p>-{{statement.name_of_ministry}}</p>
+          </li>
+        </ul>
+      </div>
+    </main>
+  </ion-content>
+</ion-view>

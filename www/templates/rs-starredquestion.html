@@ -1,0 +1,29 @@
+<ion-view view-title="Starred Questions">
+  <ion-content class="padding">
+    <main class="mainstarred">
+      <table class="table table-striped table-bordered" style="width:100%">
+        <thead style="background-color:#424242">
+        <tr>
+          <th></th>
+          <th>Department</th>
+          <th>Topic</th>
+          <th>MP</th>
+        </tr>
+        </thead>
+        <div ng-if="questions_list !== undefined">
+          <tbody>
+          <tr ng-repeat="question in questions_list">
+            <td class="index"><a ng-model="qno" ng-click="openModal({{question.question_number}})"
+                                 ng-value="{{question.question_number}}">{{question.question_number}}</a></td>
+            <td>{{question.ministry}}</td>
+            <td>{{question.topic}}</td>
+            <td>
+              <div ng-repeat="name_of_mp in question.name_of_mp">{{name_of_mp}}</div>
+            </td>
+          </tr>
+          </tbody>
+        </div>
+      </table>
+    </main>
+  </ion-content>
+</ion-view>
