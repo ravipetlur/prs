@@ -1,4 +1,109 @@
-/* Empty. Add your own CSS if you like */
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #ecf0f1;
+}
+
+h2{
+  color: #2c3e50;
+  font-size: 22px;
+}
+
+p {
+  line-height: 1.6;
+  text-align: justify;
+}
+
+a{
+  color: #302C2D;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+a:hover {
+  color: #6D6571;
+}
+
+table, thead {
+  background: #34495e !important;
+}
+
+th,td {
+  color: #fff;
+}
+
+.main {
+  font-family: 'Open Sans', sans-serif; 
+}
+
+.logo-icon {
+    position: absolute;
+    display: block;
+    float: right;
+    width: auto;
+    height: 40px;
+    z-index: 9999;
+    background-size: 100%;
+    right: 10px;
+    top: 0;
+}
+
+/* icon color changes for rajya sabha tab */
+.Rajya .dark-bg {
+   background-color: #d73b3c;
+   border: 7px solid transparent;
+}
+
+/* icon color changes for lok sabha tab */
+.lok .dark-bg {
+  background-color: #268526;
+  border: 7px solid transparent;
+}
+
+.scroll-content {
+  background-color: #ecf0f1;
+}
+
+.item-content:hover {
+  background: #ecf0f1;
+}
+
+.bar.bar-stable .title {
+    color: #2c3e50;
+    text-transform: capitalize;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    max-width: 168px;
+}
+
+.item-complex .item-content, .item-radio .item-content {
+  padding: 23px 49px 16px 70px;
+}
+
+a.date {
+    text-decoration: none;
+    background: #2c3e50;
+    color: #bdc3c7;
+    width: 120px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 0;
+    margin: 0 0 10px;
+    float: right;
+}
+
+a.button {
+  margin: 0.2em;
+  width: 100%;
+}
+
+.cards-snippet {
+    clear: both;
+    border: 1px solid #ccc;
+    padding: 1em;
+    box-shadow: 0 0 1px 1px #ccc;
+    margin: 1em 0;
+}
+
 .tabs .tab-item .icon.loksabha {
   background-repeat: no-repeat;
   background-position: 50%;
@@ -14,4 +119,3 @@
   background-image: url('/img/rajyasabha.png');
   background-size: contain;
 }
-
