@@ -108,7 +108,7 @@ a.button {
   background-repeat: no-repeat;
   background-position: 50%;
   height: 100%;
-  background-image: url('/img/loksabha.png');
+  background-image: url('../img/loksabha.png');
   background-size: contain;
 }
 
@@ -116,6 +116,6 @@ a.button {
   background-repeat: no-repeat;
   background-position: 50%;
   height: 100%;
-  background-image: url('/img/rajyasabha.png');
+  background-image: url('../img/rajyasabha.png');
   background-size: contain;
 }
