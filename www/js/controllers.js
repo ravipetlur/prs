@@ -5,7 +5,12 @@ angular.module('starter.controllers', [])
 
   .controller('LokSabha-BillsForIntroCtrl', ['$scope', '$http', '$state',
     function ($scope, $http, $state) {
-      $http.get('api/parliamenttoday/loksabha/billsforintroduction').success(function (data) {
+      $http.get('http://www.prsindia.org/api/parliamenttoday/loksabha/billsforintroduction', {
+          headers : {
+            'Access-Control-Allow-Origin': '*',
+            'Access-Control-Request-Headers': 'Content-Type, Access-Control-Allow-Headers'
+          }
+        }).success(function (data) {
         $scope.todayDate = data.date;
         $scope.todayBillList = data.bills_list;
         $scope.billsforintroduction = 'active';
@@ -13,7 +18,7 @@ angular.module('starter.controllers', [])
     }])
   .controller('LokSabha-BillsCtrl', ['$scope', '$http', '$state',
     function ($scope, $http, $state) {
-      $http.get('api/parliamenttoday/loksabha/billsforintroduction').success(function (data) {
+      $http.get('http://www.prsindia.org/api/parliamenttoday/loksabha/billsforintroduction').success(function (data) {
         $scope.todayDate = data.date;
         $scope.todayBillList = data.bills_list;
         $scope.bills = 'active';
@@ -21,7 +26,7 @@ angular.module('starter.controllers', [])
     }])
   .controller('LokSabha-DiscussionCtrl', ['$scope', '$http', '$state',
     function ($scope, $http, $state) {
-      $http.get('api/parliamenttoday/loksabha/shortdiscussion').success(function (data) {
+      $http.get('http://www.prsindia.org/api/parliamenttoday/loksabha/shortdiscussion').success(function (data) {
         $scope.todayDate = data.date;
         $scope.short_discussion_list = data.short_discussion_list;
         $scope.shortdiscussion = 'active';
@@ -29,7 +34,7 @@ angular.module('starter.controllers', [])
     }])
   .controller('LokSabha-StatementsCtrl', ['$scope', '$http', '$state',
     function ($scope, $http, $state) {
-      $http.get('api/parliamenttoday/loksabha/statements').success(function (data) {
+      $http.get('http://www.prsindia.org/api/parliamenttoday/loksabha/statements').success(function (data) {
         $scope.todayDate = data.date;
         $scope.statements_list = data.statements_list;
         $scope.statement = 'active';
@@ -37,7 +42,7 @@ angular.module('starter.controllers', [])
     }])
   .controller('LokSabha-StarredQuestionCtrl', ['$scope', '$http', '$state', '$ionicModal',
     function ($scope, $http, $state, $ionicModal) {
-      $http.get('api/parliamenttoday/loksabha/starredquestions').success(function (data) {
+      $http.get('http://www.prsindia.org/api/parliamenttoday/loksabha/starredquestions').success(function (data) {
         $scope.todayDate = data.date;
         $scope.questions_list = data.questions_list;
         $scope.starredquestions = 'active';
@@ -65,7 +70,7 @@ angular.module('starter.controllers', [])
     }])
   .controller('LokSabha-PapersToBeTabledCtrl', ['$scope', '$http', '$state',
     function ($scope, $http, $state) {
-      $http.get('api/parliamenttoday/loksabha/paperstobetabled').success(function (data) {
+      $http.get('http://www.prsindia.org/api/parliamenttoday/loksabha/paperstobetabled').success(function (data) {
         $scope.todayDate = data.date;
         $scope.papers_list = data.papers_list;
         $scope.paperstobetabled = 'active';
@@ -73,7 +78,7 @@ angular.module('starter.controllers', [])
     }])
   .controller('RajyaSabha-BillsForIntroCtrl', ['$scope', '$http', '$state',
     function ($scope, $http, $state) {
-      $http.get('api/parliamenttoday/rajyasabha/billsforintroduction').success(function (data) {
+      $http.get('http://www.prsindia.org/api/parliamenttoday/rajyasabha/billsforintroduction').success(function (data) {
         $scope.todayDate = data.date;
         $scope.todayBillList = data.bills_list;
         $scope.billsforintroduction = 'active';
@@ -81,7 +86,7 @@ angular.module('starter.controllers', [])
     }])
   .controller('RajyaSabha-BillsCtrl', ['$scope', '$http', '$state',
     function ($scope, $http, $state) {
-      $http.get('api/parliamenttoday/rajyasabha/billsforpassing').success(function (data) {
+      $http.get('http://www.prsindia.org/api/parliamenttoday/rajyasabha/billsforpassing').success(function (data) {
         $scope.todayDate = data.date;
         $scope.todayBillList = data.bills_list;
         $scope.bills = 'active';
@@ -89,7 +94,7 @@ angular.module('starter.controllers', [])
     }])
   .controller('RajyaSabha-DiscussionCtrl', ['$scope', '$http', '$state',
     function ($scope, $http, $state) {
-      $http.get('api/parliamenttoday/rajyasabha/shortdiscussion').success(function (data) {
+      $http.get('http://www.prsindia.org/api/parliamenttoday/rajyasabha/shortdiscussion').success(function (data) {
         $scope.todayDate = data.date;
         $scope.short_discussion_list = data.short_discussion_list;
         $scope.shortdiscussion = 'active';
@@ -97,7 +102,7 @@ angular.module('starter.controllers', [])
     }])
   .controller('RajyaSabha-StatementsCtrl', ['$scope', '$http', '$state',
     function ($scope, $http, $state) {
-      $http.get('api/parliamenttoday/rajyasabha/statements').success(function (data) {
+      $http.get('http://www.prsindia.org/api/parliamenttoday/rajyasabha/statements').success(function (data) {
         $scope.todayDate = data.date;
         $scope.statements_list = data.statements_list;
         $scope.statement = 'active';
@@ -105,7 +110,7 @@ angular.module('starter.controllers', [])
     }])
   .controller('RajyaSabha-StarredQuestionCtrl', ['$scope', '$http', '$state', '$ionicModal',
     function ($scope, $http, $state, $ionicModal) {
-      $http.get('api/parliamenttoday/rajyasabha/starredquestions').success(function (data) {
+      $http.get('http://www.prsindia.org/api/parliamenttoday/rajyasabha/starredquestions').success(function (data) {
         $scope.todayDate = data.date;
         $scope.questions_list = data.questions_list;
         $scope.starredquestions = 'active';
@@ -133,7 +138,7 @@ angular.module('starter.controllers', [])
     }])
   .controller('RajyaSabha-PapersToBeTabledCtrl', ['$scope', '$http', '$state',
     function ($scope, $http, $state) {
-      $http.get('api/parliamenttoday/rajyasabha/paperstobetabled').success(function (data) {
+      $http.get('http://www.prsindia.org/api/parliamenttoday/rajyasabha/paperstobetabled').success(function (data) {
         $scope.todayDate = data.date;
         $scope.papers_list = data.papers_list;
         $scope.paperstobetabled = 'active';
