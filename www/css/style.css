@@ -55,7 +55,7 @@ th,td {
 
 /* icon color changes for lok sabha tab */
 .lok .dark-bg {
-  background-color: #2F5A2F;
+  background-color: #529C51;
   border: 7px solid transparent;
 }
 
@@ -72,7 +72,7 @@ th,td {
     text-transform: capitalize;
     font-weight: 600;
     letter-spacing: 0.5px;
-    max-width: 168px;
+    max-width: auto;
 }
 
 .item-complex .item-content, .item-radio .item-content {

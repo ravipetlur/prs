@@ -95,7 +95,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         views: {
           'app-ls': {
             templateUrl: 'templates/ls-starredquestion.html',
-            controller: 'LokSabha-StatementsCtrl'
+            controller: 'LokSabha-StarredQuestionCtrl'
           }
         }
       })
@@ -167,7 +167,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         views: {
           'app-rs': {
             templateUrl: 'templates/rs-starredquestion.html',
-            controller: 'RajyaSabha-StatementsCtrl'
+            controller: 'RajyaSabha-StarredQuestionCtrl'
           }
         }
       })
