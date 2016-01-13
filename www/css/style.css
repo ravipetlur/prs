@@ -49,13 +49,13 @@ th,td {
 
 /* icon color changes for rajya sabha tab */
 .Rajya .dark-bg {
-   background-color: #d73b3c;
+   background-color: #BD2026;
    border: 7px solid transparent;
 }
 
 /* icon color changes for lok sabha tab */
 .lok .dark-bg {
-  background-color: #268526;
+  background-color: #2F5A2F;
   border: 7px solid transparent;
 }
 

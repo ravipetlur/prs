@@ -5,12 +5,7 @@ angular.module('starter.controllers', [])
 
   .controller('LokSabha-BillsForIntroCtrl', ['$scope', '$http', '$state',
     function ($scope, $http, $state) {
-      $http.get('http://www.prsindia.org/api/parliamenttoday/loksabha/billsforintroduction', {
-          headers : {
-            'Access-Control-Allow-Origin': '*',
-            'Access-Control-Request-Headers': 'Content-Type, Access-Control-Allow-Headers'
-          }
-        }).success(function (data) {
+      $http.get('http://www.prsindia.org/api/parliamenttoday/loksabha/billsforintroduction').success(function (data) {
         $scope.todayDate = data.date;
         $scope.todayBillList = data.bills_list;
         $scope.billsforintroduction = 'active';
