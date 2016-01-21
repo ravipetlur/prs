@@ -9,6 +9,7 @@ h2{
 }
 
 p {
+  font-size: 16px;
   line-height: 1.6;
   text-align: justify;
 }
@@ -72,7 +73,7 @@ th,td {
     text-transform: capitalize;
     font-weight: 600;
     letter-spacing: 0.5px;
-    max-width: auto;
+    max-width: 60%;
 }
 
 .item-complex .item-content, .item-radio .item-content {
@@ -92,6 +93,7 @@ a.date {
 }
 
 a.button {
+  font-size: 14px;
   margin: 0.2em;
   width: 100%;
 }
