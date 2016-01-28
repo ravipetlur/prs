@@ -5,11 +5,11 @@
 
       <div ng-if="statements_list !== undefined">
         <ul class="cards-snippet" ng-repeat="statement in statements_list">
-          <h2>{{statement.name_of_minister}} to give a statement on</h2>
+          <p>{{statement.name_of_minister}} to give a statement on</p>
           <li>
-            <p>{{statement.list_of_statements}}</p>
+            <p class="size-14">{{statement.list_of_statements}}</p>
 
-            <p>-{{statement.name_of_ministry}}</p>
+            <p class="size-14">-{{statement.name_of_ministry}}</p>
           </li>
         </ul>
       </div>

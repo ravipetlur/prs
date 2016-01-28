@@ -14,6 +14,10 @@ p {
   text-align: justify;
 }
 
+.size-14{
+  font-size: 14px;
+}
+
 a{
   color: #302C2D;
   line-height: 1.6;
@@ -24,12 +28,16 @@ a:hover {
   color: #6D6571;
 }
 
-table, thead {
-  background: #34495e !important;
+table, thead, th, td {
+  border: 1px solid black;
 }
 
-th,td {
-  color: #fff;
+th {
+  color: #BDC3C7;
+}
+
+td {
+  color: #000;
 }
 
 .main {
