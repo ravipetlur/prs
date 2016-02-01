@@ -2,13 +2,14 @@
   <ion-content class="padding">
     <main class="main">
       <a href="#" class="date">{{todayDate}}</a>
-      <ul class="cards-snippet">
         <div ng-if="todayBillList !== undefined">
           <li ng-repeat="bill in todayBillList">
-            <p>{{bill.name_of_bill}}</p>
-            <a class="ion-document-text button" target="_blank" href={{bill.link_of_bill_summary}}> Bill Summary</a>
-            <a class="button" target="_blank" href={{bill.link_to_legislative_brief}}>Legislative Brief</a>
-            <a class="button" target="_blank" href={{bill.link_to_standing_committee_report_summary}}>Standing Committee Report</a>
+            <ul class="cards-snippet">
+              <p>{{bill.name_of_bill}}</p>
+              <a class="ion-document-text button" target="_blank" href={{bill.link_of_bill_summary}}> Bill Summary</a>
+              <a class="button" target="_blank" href={{bill.link_to_legislative_brief}}>Legislative Brief</a>
+              <a class="button" target="_blank" href={{bill.link_to_standing_committee_report_summary}}>Standing Committee Report</a>
+            </ul>
           </li>
         </div>
       </ul>

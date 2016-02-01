@@ -2,13 +2,14 @@
   <ion-content class="padding">
     <main class="main">
       <a href="#" class="date">{{todayDate}}</a>
-      <ul class="cards-snippet">
+      <a href="#" target="_blank">continued from yesterday</a>
         <div ng-if="short_discussion_list !== undefined">
           <li ng-repeat="discussion in short_discussion_list">
-            <p class="size-14">{{discussion.name_of_discussion_topic}}</p>
+            <ul class="cards-snippet">
+              <p class="size-14">{{discussion.name_of_discussion_topic}}</p>
+            </ul>
           </li>
         </div>
-      </ul>
     </main>
   </ion-content>
 </ion-view>

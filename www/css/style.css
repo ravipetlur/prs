@@ -112,6 +112,7 @@ a.button {
     padding: 1em;
     box-shadow: 0 0 1px 1px #ccc;
     margin: 1em 0;
+    list-style-type: disc;
 }
 
 .tabs .tab-item .icon.loksabha {

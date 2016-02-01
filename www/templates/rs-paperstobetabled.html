@@ -1,16 +1,16 @@
 <ion-view view-title="Papers to be Tabled">
-<ion-content class="padding">
-  <main class="main">
-    <a href="#" class="date">{{todayDate}}</a>
-    <ul class="cards-snippet">
-      <div ng-if="papers_list !== undefined">
-        <li ng-repeat="paper in papers_list">
-          <div>{{paper.list_of_papers_to_be_tabled}}</div>
-          </br>
-          <div style="align=right"> - {{paper.ministry}}</div>
-        </li>
-      </div>
-    </ul>
-  </main>
-</ion-content>
+  <ion-content class="padding">
+    <main class="main">
+      <a href="#" class="date">{{todayDate}}</a>
+        <div ng-if="papers_list !== undefined">
+          <li ng-repeat="paper in papers_list">
+            <ul class="cards-snippet"> 
+              <div>{{paper.list_of_papers_to_be_tabled}}</div>
+              </br>
+              <div style="align=right"> - {{paper.ministry}}</div>
+            </ul>
+          </li>
+        </div>
+    </main>
+  </ion-content>
 </ion-view>

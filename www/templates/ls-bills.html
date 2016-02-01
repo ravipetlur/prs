@@ -2,13 +2,13 @@
   <ion-content class="padding">
     <main class="main">
       <a href="#" class="date">{{todayDate}}</a>
-      <ul class="cards-snippet">
         <div ng-if="todayBillList !== undefined">
-          <li ng-repeat="bill in todayBillList">
-            <p>{{bill.name_of_bill}}</p>
-          </li>
+          <ul class="cards-snippet">
+            <li ng-repeat="bill in todayBillList">
+              <p>{{bill.name_of_bill}}</p>
+            </li> 
+          </ul>
         </div>
-      </ul>
     </main>
   </ion-content>
 </ion-view>
